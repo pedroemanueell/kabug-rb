@@ -14,9 +14,9 @@ pipeline {
             }
         }
         stage('UAT') {
-            steps{
+            steps {
                 echo 'Wait for User Acceptance'
-                input(messege: 'Go to production?', ok: 'Ýes')
+                input(message: 'Go to production?', ok: 'Yes')
             }
         }
         stage('Prod') {
